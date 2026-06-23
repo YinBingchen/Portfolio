@@ -75,6 +75,29 @@ h1 {
   margin-top: 56px;
 }
 
+.resume-btn {
+  margin-top: 40px;
+
+  background: transparent;
+  border: 1px solid #444;
+
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+
+  padding: 14px 32px;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.resume-btn:hover {
+  border-color: white;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   nav {
     top: 36px;
