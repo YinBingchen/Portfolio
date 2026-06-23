@@ -10,7 +10,8 @@ body {
   background: #050505;
   color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
   overflow: hidden;
 }
 
@@ -23,6 +24,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 8vw;
+  z-index: 1000;
 }
 
 nav a {
@@ -45,7 +47,6 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   text-align: center;
 }
 
@@ -113,4 +114,164 @@ footer a {
 footer a:hover {
   color: white;
   transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  footer a {
+    font-size: 32px;
+  }
+}
+/* about me page */
+.page h1 {
+  font-size: clamp(4rem, 7vw, 6rem);
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  line-height: 1;
+}
+
+/* career page */
+.career-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.career-tabs {
+  display: flex;
+  gap: 80px;
+  margin-top: -40px;
+  margin-bottom: 80px;
+}
+
+.career-tab {
+  position: relative;
+  background: none;
+  border: none;
+  color: #777;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.career-tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+  background: white;
+
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.career-tab:hover,
+.career-tab.active {
+  color: white;
+}
+
+.career-tab:hover::after,
+.career-tab.active::after {
+  width: 100%;
+}
+
+.career-content {
+  display: none;
+  text-align: center;
+  animation: fadeUp 0.35s ease;
+}
+
+.career-content.active {
+  display: block;
+}
+
+
+.career-content h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.05em;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* project page */
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-tabs {
+  display: flex;
+  gap: 80px;
+  margin-top: -40px;
+  margin-bottom: 80px;
+}
+
+.project-tab {
+  position: relative;
+  background: none;
+  border: none;
+  color: #777;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.project-tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+  background: white;
+
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.project-tab:hover,
+.project-tab.active {
+  color: white;
+}
+
+.project-tab:hover::after,
+.project-tab.active::after {
+  width: 100%;
+}
+
+.project-content {
+  display: none;
+  text-align: center;
+  animation: fadeUp 0.35s ease;
+}
+
+.project-content.active {
+  display: block;
+}
+
+
+.project-content h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.05em;
 }
