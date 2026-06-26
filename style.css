@@ -232,6 +232,43 @@ footer a:hover {
   }
 }
 
+
+.education-info {
+  text-align: left;
+}
+
+.education-year {
+  color: #777;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.education-info h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  margin-bottom: 18px;
+}
+
+.education-degree {
+  color: #cfcfcf;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.education-info ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.education-info li {
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
 /* project page */
 .project-page {
   display: flex;
@@ -297,4 +334,66 @@ footer a:hover {
   font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 300;
   letter-spacing: -0.05em;
+}
+/*mobile version fix*/
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .career-tabs,
+  .project-tabs {
+    gap: 28px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .career-tab,
+  .project-tab {
+    font-size: 18px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  .project-tab {
+    font-size: 16px;
+  }
+
+  .career-content,
+  .project-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .education-info {
+    width: 100%;
+    text-align: left;
+  }
+
+  .education-year {
+    font-size: 16px;
+  }
+
+  .education-info h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+  }
+
+  .education-degree {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .education-info li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .project-content h2 {
+    font-size: 2.2rem;
+  }
 }
