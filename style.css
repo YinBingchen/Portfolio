@@ -232,7 +232,7 @@ footer a:hover {
   }
 }
 
-
+/* education page */
 .education-info {
   text-align: left;
 }
@@ -263,6 +263,42 @@ footer a:hover {
 }
 
 .education-info li {
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+/* Work experience page */
+.work-info {
+  text-align: left;
+}
+
+.work-year {
+  color: #777;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.work-info h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  margin-bottom: 18px;
+}
+
+.work-company {
+  color: #cfcfcf;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.work-info ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.work-info li {
   color: #aaa;
   font-size: 1.1rem;
   line-height: 1.8;
