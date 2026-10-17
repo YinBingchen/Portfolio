@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
-  <body>
+
+  <body class="projects-body">
     <nav>
       <a href="about.html">About</a>
       <a href="career.html">Career</a>
       <a href="index.html">Home</a>
       <a href="skills.html">Skills</a>
     </nav>
+
     <section class="page project-page">
       <h1>Projects</h1>
 
       <div class="project-tabs">
-        <button class="project-tab active" data-tab="datascience">
-          Data Science
-        </button>
+        <button class="project-tab active" data-tab="all">All</button>
+
+        <button class="project-tab" data-tab="datascience">Data Science</button>
 
         <button class="project-tab" data-tab="games">Games</button>
 
@@ -29,17 +31,133 @@
         </button>
       </div>
 
-      <div class="project-content active" id="datascience">
+      <!-- All -->
+      <!-- Cyber Sprint -->
+      <div class="project-content active" id="all">
+        <div class="project-grid">
+          <button
+            type="button"
+            class="project-card"
+            data-project="cyber-sprint"
+          >
+            <img
+              class="project-thumbnail"
+              src="Cyber-Sprint%20Project/cyber-sprint-thumbnail.png"
+              alt="Cyber Sprint board game cover artwork"
+            />
+
+            <div class="project-card-info">
+              <h3>Cyber Sprint</h3>
+
+              <p>
+                Designed and made a board game about digital privacy and
+                security, including its rules, cards, and board layout.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Game Design</span>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Data Science -->
+      <div class="project-content" id="datascience">
         <h2>Data Science</h2>
       </div>
 
+      <!-- Games -->
+      <!-- Cyber Sprint -->
       <div class="project-content" id="games">
-        <h2>Games</h2>
+        <div class="project-grid">
+          <button
+            type="button"
+            class="project-card"
+            data-project="cyber-sprint"
+          >
+            <img
+              class="project-thumbnail"
+              src="Cyber-Sprint%20Project/cyber-sprint-thumbnail.png"
+              alt="Cyber Sprint board game cover artwork"
+            />
+
+            <div class="project-card-info">
+              <h3>Cyber Sprint</h3>
+
+              <p>
+                Designed and made a board game about digital privacy and
+                security, including its rules, cards, and board layout.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Game Design</span>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
 
+      <!-- Web Development -->
       <div class="project-content" id="webdevelopment">
         <h2>Web Development</h2>
       </div>
+    </section>
+
+    <!-- Cyber Sprint project details -->
+    <section
+      class="project-detail-view"
+      id="cyber-sprint"
+      aria-labelledby="cyber-sprint-title"
+      hidden
+    >
+      <button type="button" class="project-back">← Back to Projects</button>
+
+      <p class="project-eyebrow">March 2025 – May 2025</p>
+
+      <h2 id="cyber-sprint-title" tabindex="-1">Cyber Sprint</h2>
+
+      <div class="project-tags">
+        <span>Game Design</span>
+      </div>
+
+      <p class="project-description">
+        I designed and built Cyber Sprint, a competitive board game about
+        digital privacy and security. I developed the board layout, turn
+        structure, security point system, and card effects, then created a
+        physical prototype with handmade cards and trackers. I also wrote the
+        rules and documented the game’s components.
+      </p>
+
+      <div class="project-photos">
+        <figure>
+          <img
+            src="Cyber-Sprint%20Project/Cyber%20Sprint%20Setup.jpg"
+            alt="Cyber Sprint board game setup"
+          />
+          <figcaption>Board and game setup</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="Cyber-Sprint%20Project/Utility%20Card.jpg"
+            alt="Handmade Cyber Sprint utility cards"
+          />
+          <figcaption>Card prototypes</figcaption>
+        </figure>
+      </div>
+
+      <a
+        class="project-button"
+        href="Cyber-Sprint%20Project/Cyber-Sprint.pdf"
+        download="Cyber-Sprint.pdf"
+      >
+        Download Project PDF ↓
+      </a>
     </section>
   </body>
 </html>
