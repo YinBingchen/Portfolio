@@ -32,9 +32,38 @@
       </div>
 
       <!-- All -->
-      <!-- Cyber Sprint -->
       <div class="project-content active" id="all">
         <div class="project-grid">
+          <!-- Pitches Project -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="pitches-project"
+          >
+            <img
+              class="project-thumbnail"
+              src="Pitches%20Project/pitches-project-thumbnail.png"
+              alt="Pitches project cover artwork"
+            />
+
+            <div class="project-card-info">
+              <h3>MLB Pitch Classification</h3>
+
+              <p>
+                Built a machine learning pipeline to classify baseball pitches
+                using tracking data and evaluated its performance across
+                seasons.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Machine Learning</span>
+                </div>
+              </div>
+            </div>
+          </button>
+          <!-- Cyber Sprint -->
           <button
             type="button"
             class="project-card"
@@ -61,18 +90,85 @@
               </div>
             </div>
           </button>
+          <!-- University App -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="university-app"
+          >
+            <div class="university-thumbnail-group">
+              <img
+                src="University%20App/uniapp1.png"
+                alt="Sign-in screen preview"
+              />
+              <img
+                src="University%20App/uniapp2.png"
+                alt="Sign-up screen preview"
+              />
+              <img
+                src="University%20App/uniapp3.png"
+                alt="Password recovery preview"
+              />
+            </div>
+
+            <div class="project-card-info">
+              <h3>University App</h3>
+
+              <p>
+                Designed the login and password recovery screens in Figma for a
+                group university app project.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Figma</span>
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
 
       <!-- Data Science -->
       <div class="project-content" id="datascience">
-        <h2>Data Science</h2>
+        <div class="project-grid">
+          <!-- Pitches Project -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="pitches-project"
+          >
+            <img
+              class="project-thumbnail"
+              src="Pitches%20Project/pitches-project-thumbnail.png"
+              alt="Pitches project cover artwork"
+            />
+
+            <div class="project-card-info">
+              <h3>MLB Pitch Classification</h3>
+
+              <p>
+                Built a machine learning pipeline to classify baseball pitches
+                using tracking data and evaluated its performance across
+                seasons.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Machine Learning</span>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
 
       <!-- Games -->
-      <!-- Cyber Sprint -->
       <div class="project-content" id="games">
         <div class="project-grid">
+          <!-- Cyber Sprint -->
           <button
             type="button"
             class="project-card"
@@ -104,7 +200,116 @@
 
       <!-- Web Development -->
       <div class="project-content" id="webdevelopment">
-        <h2>Web Development</h2>
+        <div class="project-grid">
+          <!-- University App -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="university-app"
+          >
+            <div class="university-thumbnail-group">
+              <img
+                src="University%20App/uniapp1.png"
+                alt="Sign-in screen preview"
+              />
+              <img
+                src="University%20App/uniapp2.png"
+                alt="Sign-up screen preview"
+              />
+              <img
+                src="University%20App/uniapp3.png"
+                alt="Password recovery preview"
+              />
+            </div>
+
+            <div class="project-card-info">
+              <h3>University App</h3>
+
+              <p>
+                Designed the login and password recovery screens in Figma for a
+                group university app project.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Figma</span>
+                  <span>UI/UX Design</span>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pitches Project details -->
+    <section
+      class="project-detail-view"
+      id="pitches-project"
+      aria-labelledby="pitches-project-title"
+      hidden
+    >
+      <button type="button" class="project-back">← Back to Projects</button>
+
+      <p class="project-eyebrow">February 2026</p>
+
+      <h2 id="pitches-project-title" tabindex="-1">MLB Pitch Classification</h2>
+
+      <div class="project-tags">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Scikit-learn</span>
+        <span>Matplotlib</span>
+      </div>
+
+      <p class="project-description">
+        I built a K-Nearest Neighbors classifier to identify Kevin Gausman’s
+        pitch types using Statcast data. I explored pitch characteristics,
+        created a preprocessing pipeline for missing values, feature scaling,
+        and categorical encoding, and trained the model on 2024 pitches before
+        testing it on data from the first half of 2025.
+      </p>
+
+      <p class="project-description">
+        The model achieved 98.34% test accuracy across 1,806 pitches. I also
+        examined precision and recall for each pitch type, identifying weaker
+        performance on the rare sinker class despite the high overall accuracy.
+      </p>
+
+      <h3 class="pitches-download-heading">Project Files</h3>
+
+      <div class="pitches-downloads">
+        <a
+          class="project-button"
+          href="Pitches%20Project/pitches.ipynb"
+          download="pitches.ipynb"
+        >
+          Download Project (.ipynb) ↓
+        </a>
+
+        <a
+          class="project-button"
+          href="Pitches%20Project/pitches.html"
+          download="pitches.html"
+        >
+          Download Project (.html) ↓
+        </a>
+
+        <a
+          class="project-button"
+          href="Pitches%20Project/pitches-train.csv"
+          download="pitches-train.csv"
+        >
+          Download Training Data (.csv) ↓
+        </a>
+
+        <a
+          class="project-button"
+          href="Pitches%20Project/pitches-test.csv"
+          download="pitches-test.csv"
+        >
+          Download Test Data (.csv) ↓
+        </a>
       </div>
     </section>
 
@@ -157,6 +362,67 @@
         download="Cyber-Sprint.pdf"
       >
         Download Project PDF ↓
+      </a>
+    </section>
+
+    <!-- University App project details -->
+    <section
+      class="project-detail-view"
+      id="university-app"
+      aria-labelledby="university-app-title"
+      hidden
+    >
+      <button type="button" class="project-back">← Back to Projects</button>
+
+      <p class="project-eyebrow">April 2025</p>
+
+      <h2 id="university-app-title" tabindex="-1">University App</h2>
+
+      <div class="project-tags">
+        <span>Figma</span>
+        <span>UI/UX Design</span>
+      </div>
+
+      <p class="project-description">
+        As part of a group project to design a university app, I created the
+        login and forgot-password screens in Figma. My work focused on the
+        interface layouts, form fields, and navigation for signing in and
+        recovering account access. The screens below show my design work within
+        the larger team project.
+      </p>
+
+      <div class="project-photos university-photos">
+        <figure>
+          <img
+            src="University%20App/uniapp1.png"
+            alt="University app interface design, screen one"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure>
+          <img
+            src="University%20App/uniapp2.png"
+            alt="University app interface design, screen two"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure>
+          <img
+            src="University%20App/uniapp3.png"
+            alt="University app interface design, screen three"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+
+      <a
+        class="project-button"
+        href="University%20App/university%20app.pdf"
+        download="University-App-Designs.pdf"
+      >
+        Download Design PDF ↓
       </a>
     </section>
   </body>
