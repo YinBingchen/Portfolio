@@ -980,6 +980,29 @@ body.projects-body.project-open {
   gap: 12px;
 }
 
+.wine-files-heading {
+  margin: 40px 0 18px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wine-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.fraud-files-heading {
+  margin: 40px 0 18px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.fraud-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 /* Skills page */
 body.skills-body {
   height: auto;
