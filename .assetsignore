@@ -1,3 +1,5 @@
+.git/
+.git/**
 /Fraud Project/fraud-train.csv
 /Genetics Project/genetics-data.csv
 /Books Project/books-data.csv
