@@ -98,6 +98,11 @@ h1 {
   transform: translateY(-2px);
 }
 
+.resume-btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   nav {
     top: 36px;
@@ -152,6 +157,209 @@ footer a:hover {
   margin-bottom: 100px;
   line-height: 1;
 }
+
+.page.about-page {
+  display: block;
+  width: min(1100px, 88%);
+  max-width: 1100px;
+  height: auto;
+  margin: 140px auto 0;
+  padding: 0 0 90px;
+  text-align: left;
+}
+
+.about-page .about-header {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.about-page .about-header > p {
+  margin: 16px 0 0;
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Alternating two-column layout */
+.about-page .about-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 80px);
+  margin-bottom: 96px;
+}
+
+.about-page .about-row-reverse {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.about-page .about-row-reverse > .about-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.about-page .about-row-reverse > :last-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.about-page .about-copy {
+  min-width: 0;
+}
+
+.about-page h2 {
+  margin: 0 0 22px;
+  color: #f0f0f0;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.about-page .about-copy p,
+.about-page .about-turning-point p {
+  margin: 0 0 20px;
+  color: #b8b8b8;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.about-page .about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Original photo proportions */
+.about-page .about-photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.about-page .about-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-page .about-photo figcaption {
+  margin-top: 12px;
+  color: #999;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Two golf memories, with a smaller portrait */
+.about-page .about-golf-photos {
+  display: grid;
+  gap: 28px;
+}
+
+.about-page .about-golf-portrait {
+  width: 68%;
+}
+
+.about-page .about-event-photo {
+  width: 85%;
+  justify-self: center;
+}
+
+/* A quieter break between photo sections */
+.about-page .about-turning-point {
+  max-width: 760px;
+  margin: 0 auto 96px;
+  padding: 48px 0;
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+}
+
+.about-page .about-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #666;
+  color: #eee;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.about-page .about-project-link:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.about-page .about-project-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 6px;
+}
+
+.about-page .about-row:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .page.about-page {
+    margin-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .about-page .about-header {
+    margin-bottom: 44px;
+  }
+
+  .about-page .about-row,
+  .about-page .about-row-reverse {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    margin-bottom: 64px;
+  }
+
+  .about-page .about-row-reverse > .about-copy,
+  .about-page .about-row-reverse > :last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .about-page .about-copy p,
+  .about-page .about-turning-point p {
+    font-size: 16px;
+  }
+
+  .about-page .about-turning-point {
+    margin-bottom: 64px;
+    padding: 32px 0;
+  }
+
+  .about-page .about-event-photo {
+    width: 100%;
+  }
+}
+
+html:has(body.about-body) {
+  height: auto;
+  overflow-y: auto;
+}
+
+body.about-body {
+  display: block;
+  position: static;
+  height: auto;
+  min-height: 100vh;
+  max-height: none;
+  overflow-y: auto;
+}
+
+body.about-body .about-page {
+  position: static;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
 
 /* career page */
 .career-page {
@@ -387,7 +595,8 @@ body.projects-body.project-open {
 }
 
 /* Background behind the fixed navigation */
-.projects-body nav::before {
+.projects-body nav::before,
+.about-body nav::before {
   content: "";
   position: absolute;
   inset: -48px 0 -20px;
@@ -711,7 +920,8 @@ body.projects-body.project-open {
     flex-wrap: wrap;
   }
 
-  .projects-body nav::before {
+  .projects-body nav::before, 
+  .about-body nav::before {
     top: -36px;
   }
 
