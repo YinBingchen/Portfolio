@@ -1003,6 +1003,33 @@ body.projects-body.project-open {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+.spellbound-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #0d0d0d;
+  border: 1px solid #242424;
+  box-sizing: border-box;
+}
+
+.spellbound-thumbnail span {
+  color: #eee;
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.spellbound-thumbnail small {
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 /* Skills page */
 body.skills-body {
   height: auto;

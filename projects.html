@@ -34,6 +34,64 @@
       <!-- All -->
       <div class="project-content active" id="all">
         <div class="project-grid">
+          <!-- Spellbound Project -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="spellbound-project"
+          >
+            <div class="project-thumbnail spellbound-thumbnail">
+              <span>Spellbound</span>
+              <small>In Development</small>
+            </div>
+
+            <div class="project-card-info">
+              <h3>Spellbound</h3>
+
+              <p>
+                Developing a single-player platformer in Unreal Engine 5,
+                combining exploration, puzzles, and sword-and-magic combat.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Unreal Engine 5</span>
+                  <span>C++</span>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <!-- Portfolio Project -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="portfolio-project"
+          >
+            <img
+              class="project-thumbnail"
+              src="Portfolio%20Project/portfolio-thumbnail.png"
+              alt="Homepage, projects, and skills pages of my personal portfolio"
+              loading="lazy"
+            />
+
+            <div class="project-card-info">
+              <h3>Personal Portfolio</h3>
+
+              <p>
+                Designed and built a personal portfolio with project filtering,
+                smooth transitions, and dedicated views to showcase my work.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </button>
           <!-- Books Project-->
           <button
             type="button"
@@ -536,6 +594,33 @@
       <!-- Games -->
       <div class="project-content" id="games">
         <div class="project-grid">
+          <!-- Spellbound Project -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="spellbound-project"
+          >
+            <div class="project-thumbnail spellbound-thumbnail">
+              <span>Spellbound</span>
+              <small>In Development</small>
+            </div>
+
+            <div class="project-card-info">
+              <h3>Spellbound</h3>
+
+              <p>
+                Developing a single-player platformer in Unreal Engine 5,
+                combining exploration, puzzles, and sword-and-magic combat.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>Unreal Engine 5</span>
+                  <span>C++</span>
+                </div>
+              </div>
+            </div>
+          </button>
           <!-- Cyber Sprint -->
           <button
             type="button"
@@ -569,6 +654,36 @@
       <!-- Web Development -->
       <div class="project-content" id="webdevelopment">
         <div class="project-grid">
+          <!-- Portfolio Project -->
+          <button
+            type="button"
+            class="project-card"
+            data-project="portfolio-project"
+          >
+            <img
+              class="project-thumbnail"
+              src="Portfolio%20Project/portfolio-thumbnail.png"
+              alt="Homepage, projects, and skills pages of my personal portfolio"
+              loading="lazy"
+            />
+
+            <div class="project-card-info">
+              <h3>Personal Portfolio</h3>
+
+              <p>
+                Designed and built a personal portfolio with project filtering,
+                smooth transitions, and dedicated views to showcase my work.
+              </p>
+
+              <div class="project-card-bottom">
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </button>
           <!-- University App -->
           <button
             type="button"
@@ -610,6 +725,81 @@
       </div>
     </section>
     <!-- Project detail views -->
+    <!-- Spellbound Project details -->
+    <section
+      class="project-detail-view"
+      id="spellbound-project"
+      aria-labelledby="spellbound-project-title"
+      hidden
+    >
+      <button type="button" class="project-back">← Back to Projects</button>
+
+      <p class="project-eyebrow">August 2026 – Present</p>
+
+      <h2 id="spellbound-project-title" tabindex="-1">Spellbound</h2>
+
+      <div class="project-tags">
+        <span>Unreal Engine 5</span>
+        <span>C++</span>
+        <span>In Development</span>
+      </div>
+
+      <p class="project-description">
+        I am currently developing Spellbound, a single-player platformer in
+        Unreal Engine 5. The game is planned to combine exploration,
+        environmental puzzles, and sword-and-magic combat.
+      </p>
+
+      <p class="project-description">
+        I have so far implemented basic player movement, gameplay mechanics, and
+        the player interface. I am continuing to develop the game while building
+        my skills in C++, level design, and Unreal Engine.
+      </p>
+    </section>
+    <!-- Portfolio Project details -->
+    <section
+      class="project-detail-view"
+      id="portfolio-project"
+      aria-labelledby="portfolio-project-title"
+      hidden
+    >
+      <button type="button" class="project-back">← Back to Projects</button>
+
+      <p class="project-eyebrow">June 2026 – Present</p>
+
+      <h2 id="portfolio-project-title" tabindex="-1">Personal Portfolio</h2>
+
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Web Design</span>
+      </div>
+
+      <p class="project-description">
+        I designed and built this website to bring together my projects,
+        technical skills, education, and experience. I created a minimal dark
+        interface with consistent typography, spacing, and reusable card layouts
+        to keep the focus on my work.
+      </p>
+
+      <p class="project-description">
+        I implemented category tabs and smooth transitions between the project
+        grid and individual project details using JavaScript. Each project
+        includes a summary of my contribution and links to relevant files or
+        source code. I continue to refine the design and add new work as I
+        develop my skills.
+      </p>
+
+      <a
+        class="project-button"
+        href="https://github.com/YinBingchen/Portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Source on GitHub ↗
+      </a>
+    </section>
     <!-- Books Project details -->
     <section
       class="project-detail-view"
